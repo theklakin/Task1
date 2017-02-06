@@ -6,16 +6,15 @@ public class Triangle extends Shape{
 	private double s1;
 	private double s2;
 	
-	public Triangle(int id, double h, double b, double s1, double s2){
-		super(id);
-		this.h = h;
-		this.b = b;
-		this.s1 = s1;
-		this.s2 = s2;
-	}
+	//public Triangle(int id, double h, double b, double s1, double s2){
+	//	super(id);
+	//	this.h = h;
+	//	this.b = b;
+	//	this.s1 = s1;
+	//	this.s2 = s2;
+	//}
 	
 	public Triangle(double h, double b, double s1, double s2){
-		super(0);
 		this.h = h;
 		this.b = b;
 		this.s1 = s1;
@@ -54,11 +53,13 @@ public class Triangle extends Shape{
 		return s2;
 	}
 	
+	@Override
 	public double area(){
 		System.out.println("The area of the Triangle is: ");
 		return (b*h)/2;
 	}
 	
+	@Override
 	public double perimeter(){
 		System.out.println("The perimeter of the Triangle is: ");
 		return (s1+s2+b);

@@ -1,30 +1,16 @@
 package shape;
 
-public class Shape {
+public abstract class Shape {
 	
-	private int shapeId;
+	//public Shape(int shapeId){
+	//	this.shapeId = shapeId;
+	//}
 	
-	public Shape(int shapeId){
-		this.shapeId = shapeId;
-	}
+	//public abstract void set_shapeId(int shapeId);
 	
-	public void set_shapeId(int shapeId){
-		this.shapeId = shapeId;
-	}
-	
-	public int get_shapeId(){
-		return shapeId;
-	}
+	//public abstract int get_shapeId();
 
-	public double area(){
-		//double a;
-		System.out.println("I am the area method of the parent class");
-		return 1;
-	}
+	public abstract double area();
 	
-	public double perimeter(){
-		//double p;
-		//System.out.println("I am the area method of the parent class");
-		return 0;
-	}
+	public abstract double perimeter();
 }

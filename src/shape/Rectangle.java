@@ -4,14 +4,13 @@ public class Rectangle extends Shape{
 	private double a;
 	private double b;
 	
-	public Rectangle(int id, double a, double b){
-		super(id);
-		this.a = a;
-		this.b = b;
-	}
+	//public Rectangle(int id, double a, double b){
+	//	super(id);
+	//	this.a = a;
+	//	this.b = b;
+	//}
 	
 	public Rectangle(double a, double b){
-		super(0);
 		this.a = a;
 		this.b = b;
 	}
@@ -32,11 +31,13 @@ public class Rectangle extends Shape{
 		return b;
 	}
 	
+	@Override
 	public double area(){
 		System.out.println("The area of the Rectangular is: ");
 		return a*b;
 	}
 	
+	@Override
 	public double perimeter(){
 		System.out.println("The perimeter of the Rectangular is: ");
 		return 2*(a+b);
